@@ -6,4 +6,11 @@
       next();
     };
     
+    exports.errorhandler = function(err, req, res, next) {
+      if (err.render) {
+          err.render(req, res);
+      } else {
+          next(err);
+      }
+    };
 })();

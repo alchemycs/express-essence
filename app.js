@@ -35,13 +35,7 @@ app.configure(function(){
   app.use(function(req, res) {
       throw new errors.NotFoundError();
   });
-  app.error(function(err, req, res, next) {
-      if (err.render) {
-          err.render(req, res);
-      } else {
-          next(err);
-      }
-  });
+  app.error(tools.errorhandler);
 });
 
 app.configure('development', function(){
