@@ -1,0 +1,185 @@
+{% extends "layout.html" %}
+
+{% block title %}Express Essence - A union of Twitter Bootstrap and ExpressJS.{% endblock %}
+
+{% block header %}
+<div class="hero-unit">
+    <h1>Express Essence<img src="/img/apple-touch-icon-72x72.png" style="vertical-align: top"/></h1>
+    <p>
+        A union of <a rel="nofollow" href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>
+        and the <a rel="nofollow" href="http://expressjs.com//">Express</a> nodejs framework.
+    </p>
+</div>
+    
+{% endblock %}
+
+{% block main %}
+    <a rel="nofollow" class="fork" href="https://github.com/alchemycs/express-essence"> 
+        <img src="/img/forkme-badge.png" alt="Fork me on GitHub">
+    </a> 
+    {% if settings.is_testenv%}
+    <div class="alert">
+        <strong>ALERT</strong>: you are currently using the development environment
+    </div>
+{% endif %}
+    <div class="row">
+        <div class="span9">
+            <h2>What is this?</h2>
+            <p>
+                Express Essence is a development foundation to get your idea up and
+                running with NodeJS and ExpressJS as quickly as possible, while still looking
+                stylish.
+            </p>
+        </div>
+        <div class="span1">
+            <a rel="nofollow" class="twitter-share-button" 
+               href="http://twitter.com/share" 
+               data-count="vertical"
+               data-via="alchemycs"
+               data-text="Checking out Node Essence: get up and running on #nodejs quickly, while still looking stylish"></a> 
+        </div> 
+        <div class="span1"> 
+            <g:plusone size="tall"></g:plusone> 
+        </div>     
+        <div class="span1"> 
+            <fb:like href="" send="false" layout="box_count" width="40" show_faces="false" font=""></fb:like> 
+            <div id="fb-root"></div> 
+        </div> 
+    </div>
+    <div class="row">
+        <div class="span6">
+            <h3>Front end</h3>
+            <p>
+                You know how new born babies can <a target="_new" rel="nofollow" href="http://cdn2.holytaco.com/wp-content/uploads/2011/01/455813-Copy.jpg">look as gruseome as Freddy Kruger</a> but
+                everyone still says how cute they are?
+            </p>
+            <p>
+                Nobody says that about web applications. It doesn't matter how awesome your
+                code is or how intricate the problem is you just solved, end users only
+                care if it 'looks nice'. Once they get past the smoke and mirrors they
+                begin to glimpse just how fantastic your work is.
+            </p>
+            <p>
+                The <a href="http://twitter.github.com/bootstrap/" rel="nofollow">Twitter
+                Bootstrap (v2.0.2)</a> is integrated because I'm a programmer and not a designer,
+                and I'm tired of spending time trying to figure out what looks good or not:
+                <abbr title="Twitter Bootstrap">TB</abbr> allows me to
+    concentrate on building great stuff rather than apologising
+                about how it looks!
+            </p>
+            <div class="alert">
+                Be sure to do some customisation to the template for your own
+                application: <a rel="nofollow" target="_new" href="http://drawar.com/d/great-another-bootstrap-site/">Great, Another Bootstrap Site <span class="icon-external-link"></span></a>
+            </div>
+        </div>
+        <div class="span6">
+            <h3>Back end </h3>
+            <p>
+                This project is based on the great work by the ExpressJS team.
+                Express Essence is opinionated and built to primarily 
+                accomodate what I use most.
+            </p>
+            <p>
+                I'm very happy to listen to ideas, recommendations or constructive criticisms,
+                but I would love to see how you use it!
+            </p>
+        </div>        
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="span6">
+            <h2>What does it include?</h2>
+            <div class="row">
+            <div class="span3">
+                <ul> 
+                    <li class="icon-ok"><a rel="nofollow" href="http://twitter.github.com/bootstrap/">Twitter Bootstrap (v2.0.2)</a>: provides an attractive front-end so your app looks good from the outset (concentrate on awesome code)</li>
+                    <li class="icon-ok"><a href="http://modernizr.com/" rel="nofollow">Modernizr 2.5.3</a>: I encourage you to grab your own version of Modernizr with just the features you need for you particular app. The one included here tests for most things and include <code>.load()</code>
+                    <li class="icon-ok"><a href="http://www.google.com/analytics/" rel="nofollow">Google Analytics</a> placeholder: doesn't render on local dev to improve speed and and not interfere with your statistics</li>
+                </ul>
+            </div>
+            <div class="span3">
+                <ul>
+                    <li class="icon-ok"><a rel="nofollow" href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a>: Iconic font designed for use with Twitter Bootstrap</li>
+                    <li class="icon-ok"><del><a href="http://openid.net/" rel="nofollow">OpenID</a> authentication with a beautiful interface</del></li>
+                    <li class="icon-ok"><del>Decorators: <code>@login_required</code> &amp; <code>@admin_required</code><del></li>
+                    <li class="icon-ok"><del>Template filters: <code>truncate_chars</code>, <code>short_url</code> &amp; <code>prefix_cdn</code></del></li>
+                    <li class="icon-ok">Out of the box support for <b>sessions</b> <del>&amp; <b>named routes</b></del></li>
+                    <li class="icon-ok"><del>Caching framework</del></li> 
+                    <li class="icon-ok">Page not found (404) handler and page</li>
+                    <li class="icon-ok"><del>User preferences model with caching and <a href="http://www.gravatar.com" rel="nofollow">Gravatar</a> link</del></li>
+                    <li class="icon-ok">Best practice site configuration defaults</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="span6">
+            <h2> What does it <em>not</em> include?</h2>
+            <ul>
+                <li class="icon-remove"><a rel="nofollow" href="http://html5boilerplate.com/">HTML5 Boilerplate</a>:
+                    This is a fantastic piece of work, but if you are like me and you
+                    are a programmer and not a designer, it doesn't help make your app look nice!
+                </li>
+                <li class="icon-remove">Build script to optimize images, js and css files. H5BP extracted
+                    this to it's <a rel="nofollow" href="https://github.com/h5bp/ant-build-script">own repo</a>
+                    so you can include it and configure it if you want.
+                </li>
+            </ul>
+            <h2>What does it assume?</h3>
+            <ul>
+                <li class="icon-star">You can, or want to program NodeJS</li>
+                <li class="icon-star">You can, or want to program and deploy for NodeJS</li>
+                <li class="icon-star">You know how, or want to program web apps</li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    {% if prefs %}
+    <h2>Welcome, {{ prefs.nickname }}</h2>
+    <hr/>
+    {% endif %}
+
+    <h2>How do I get started?</h2> 
+    <p>Visit the <del><a rel="nofollow" href="https://github.com/alchemycs">GitHub repo</a> or download it in either <a rel="nofollow" href="https://github.com/alchemycs/express-essence/zipball/master">zip</a> or <a rel="nofollow" href="https://github.com/alchemycs/express-essence/tarball/master">tar</a> format. </del>
+    Here is a quick guide for the first steps:</p> 
+    <del><pre># Clone the repository
+$ git clone git@github.com:alchemycs/express-essence.git</del>
+$ cd express-essence
+
+# Start the server
+$ node app.js
+
+# You can now visit the site via localhost:3030
+$ google-chrome http://localhost:3030
+
+...  ...
+</pre></del>
+  
+    <div class="row">
+        <div class="span1"> 
+            <a rel="nofollow" class="twitter-share-button" 
+               href="http://twitter.com/share" 
+               data-count="vertical" 
+               data-text="Checking out node-essence"></a> 
+        </div>         
+        <div class="span1"> 
+            <g:plusone size="tall"></g:plusone> 
+        </div> 
+        <div class="span1"> 
+            <fb:like href="" send="false" layout="box_count" width="40" show_faces="false" font=""></fb:like> 
+            <div id="fb-root"></div> 
+        </div> 
+        <div class="span9">
+            <h2>How can I contribute?</h2>
+            <p>If you have ideas for changes to the project, join me on Github and file a ticket, or send over a pull request if you have working code!</p>            
+        </div>
+    </div>
+    <hr/>
+    
+    <script> 
+        (function(w,d){
+            Modernizr.load({load: '//connect.facebook.net/en_US/all.js#xfbml=1'});
+            Modernizr.load({load: '//platform.twitter.com/widgets.js'});
+            Modernizr.load({load: 'https://apis.google.com/js/plusone.js'});
+        }(this,document));
+    </script>  
+{% endblock %}

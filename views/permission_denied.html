@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block header %}
+<div class="page-header">
+    <h1>Access Denied <small>You do not have permission to access this page</small></h1>
+</div>
+{% endblock header %}
+
+{% block main %}
+    <h2>Access Denied</h2>
+    <p>
+      Although you have authenticated, you do not have permission to access this
+      resource.
+   </p>
+   <p>
+     If you believe you should have access to this resource, please contact support.
+  </p>
+{% endblock main %}

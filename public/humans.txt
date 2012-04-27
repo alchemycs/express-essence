@@ -1,0 +1,34 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Developer: @AlchemyCS
+  Site: https://github.com/alchemycs
+  Twitter: @AlchemyCS
+  Location: Asia-Pacific <http://www.earthexplorer.info/Explore/56126019-asia-pacific>
+
+/* THANKS */
+  Names (& URL):
+  ExpressJS, NodeJS
+  Twitter Bootstrap
+  
+  Flask Icon
+    - http://www.iconfinder.com/search/?q=iconset%3Ai_love_icons__by_svengraph-d2yk60n
+  
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: ExpressJS, Swig, Twitter Bootstrap, Modernizr, jQuery
+  Software: NodeJS, Cloud9 IDE, MAC OS X Snow Leopard
+  
+
+ __ _   __  ____  ____ 
+(  ( \ /  \(    \(  __)
+/    /(  O )) D ( ) _) 
+\_)__) \__/(____/(____)
+
+ ____  ____  ____  ____  __ _   ___  ____ 
+(  __)/ ___)/ ___)(  __)(  ( \ / __)(  __)
+ ) _) \___ \\___ \ ) _) /    /( (__  ) _) 
+(____)(____/(____/(____)\_)__) \___)(____)
