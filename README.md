@@ -8,7 +8,7 @@ You know how new born babies can [look as gruseome as Freddy Kruger](http://cdn2
 
 Nobody says that about web applications. It doesn't matter how awesome your code is or how intricate the problem is you just solved, end users only care if it 'looks nice'. Once they get past the smoke and mirrors they begin to glimpse just how fantastic your work is.
 
-The [Twitter Bootstrap (v2.0.2)](http://twitter.github.com/bootstrap/) is integrated because I'm a programmer and not a designer, and I'm tired of spending time trying to figure out what looks good or not: TB allows me to concentrate on building great stuff rather than apologising about how it looks!
+The [Twitter Bootstrap (v2.1.1)](http://twitter.github.com/bootstrap/) is integrated because I'm a programmer and not a designer, and I'm tired of spending time trying to figure out what looks good or not: TB allows me to concentrate on building great stuff rather than apologising about how it looks!
 
 ###Back end
 
@@ -17,7 +17,7 @@ This project is based on the great work by the Express JS team. Express Essence 
 I'm very happy to listen to ideas, recommendations or constructive criticisms, but I would love to see how you use it!
 
 ##What does it include?
-- [Twitter Bootstrap (v2.0.2)](http://twitter.github.com/bootstrap/): provides an attractive front-end so your app looks good from the outset (concentrate on awesome code)
+- [Twitter Bootstrap (v2.1.1)](http://twitter.github.com/bootstrap/): provides an attractive front-end so your app looks good from the outset (concentrate on awesome code)
 - [Modernizr 2.5.3](http://modernizr.com/): I encourage you to grab your own version of Modernizr with just the features you need for you particular app. The one included here tests for most things and include `.load()`
 - [Google Analytics](http://www.google.com/analytics/) placeholder: doesn't render on local dev to improve speed and and not interfere with your statistics
 - [Font Awesome](http://fortawesome.github.com/Font-Awesome/): Iconic font designed for use with Twitter Bootstrap
