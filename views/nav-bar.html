@@ -6,10 +6,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="{{nav_bar.home}}">Express Essence</a>
+      <a class="brand" href="/">Express Essence</a>
       <div class="nav-collapse">
         <ul class="nav">
-          <li class="active"><a href="{{nav_bar.home}}"><span class="icon-home"></span>Home</a></li>
+          <li class="active"><a href="/"><span class="icon-home"></span>Home</a></li>
           <li><a href="https://github.com/alchemycs/express-essence"><span class="icon-github-sign icon-white icon-large"></span>GitHub</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-heart"></span>Using<span class="caret"></span></a>
@@ -29,18 +29,15 @@
         </ul>
         <div class="pull-right">
           <ul class="nav">
-            {% if prefs %}
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="//www.gravatar.com/avatar/{{prefs.email_md5}}?s=16&d=mm" align="absmiddle" /> {{prefs.nickname}}<span class="caret"></span></a>
+            <li id="accountMenu" class="dropdown hidden">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img id="accountMenuGravatar" src="//www.gravatar.com/avatar/{{gravatarHash}}?s=16&d=mm" align="absmiddle" /> <span id="accountMenuEmail">User Menu</span><span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="{{nav_bar.account}}">Account<span class="icon-cogs pull-right"></span></a></li>
-                <li><a href="{{nav_bar.logout}}">Log Out<span class="icon-signout pull-right"></span></a></li>
+                <li><a href="/account">Account<span class="icon-cogs pull-right"></span></a></li>
+                <li id="signout"><a href="#"><span class="icon-signout pull-right"></span>Sign Out</a></li>
               </ul>
             </li>
-            {% else %}
             <!--<li><a href="/login?continue-/">Test The Login</a></li>-->
-            <li><a href="{{nav_bar.login}}"><span class="icon-signin"></span><del>Test The Login</del></a></li>
-            {% endif %}
+            <li id="signin" class="hidden"><a href="#" ><span class="icon-signin"></span>Sign In</a></li>
           </ul>
         </div>
       </div><!--/.nav-collapse -->
