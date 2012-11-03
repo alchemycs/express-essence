@@ -29,7 +29,7 @@ passport.deserializeUser(authentication.deserializeUser);
 //   credentials (in this case, a BrowserID verified email address), and invoke
 //   a callback with a user object.
 passport.use(new BrowserIDStrategy({
-    audience: 'http://express-essence.alchemycs.c9.io'
+    audience: process.env.BROWSERID_AUDIENCE||'http://express-essence.alchemycs.c9.io'
   }, authentication.validateUser)
 );
 
